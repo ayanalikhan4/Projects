@@ -7,6 +7,7 @@ window.minsize(width = 500, height=300)
 
 my_lable = tkinter.Label(text = "I am a lable", font=("Ariel", 24, "bold"))
 my_lable.pack()
+# this a temp
 
 
 window.mainloop()
