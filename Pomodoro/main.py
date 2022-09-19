@@ -15,15 +15,44 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 
+import time
+
+
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
 window.title("Pomodoro")
+window.config(padx=100, pady=50, bg= YELLOW)
 
-canvas = Canvas(width=200, height = 224)
-tomato_img = PhotoImage(file="tomato.png")
+def say_something():
+    print("Something")
+
+
+window.after(5000, say_something)
+
+title_lable = Label(text = "Timer", fg = GREEN,bg= YELLOW, font= (FONT_NAME,50))
+title_lable.grid(row = 0, column = 1)
+
+canvas = Canvas(width=200, height = 224, bg= YELLOW, highlightthickness= 0)
+tomato_img = PhotoImage(file="/Users/ayanalikhan/Desktop/CS/Development/Projects/Pomodoro/tomato.png")
 canvas.create_image(100,112, image = tomato_img )
-canvas.pack()
+
+canvas.create_text(100,130, text = "00:00", fill = "white",font = (FONT_NAME,35,"bold"))
+canvas.grid(row = 1, column= 1)
+
+def button_on_click():
+    pass
+
+reset_button = Button(text = "Reset",command=button_on_click, highlightthickness= 0)
+reset_button.grid(row = 2, column= 0)
+
+start_button = Button(text = "Start",command=button_on_click,highlightthickness= 0)
+start_button.grid(row = 2, column= 2)
+
+check_marks = Label(text = "✔",fg= GREEN,bg=YELLOW)
+check_marks.grid(row = 3, column= 1)
+
 
 
 window.mainloop()
