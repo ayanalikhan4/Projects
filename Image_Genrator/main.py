@@ -17,5 +17,7 @@ prompt = ("A futuristic Starbucks barista,"
 )
 image = pipe(prompt,guidance_scale = 7.5)["sample"][0]
 
-plt.axis = ("off")
-plt.imshow(image);
+image.save("A_futuristic_Starbucks_barista.jpg")
+
+#plt.axis = ("off")
+#plt.imshow(image);
