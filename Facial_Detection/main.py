@@ -1,7 +1,7 @@
 from deepface import DeepFace
 from IPython.display import Image 
 
-path = "/Users/ayanalikhan/Desktop/CS/Development/Projects/Facial_Detection/IMG_1654.jpg"
+path = "/Users/ayanalikhan/Desktop/CS/Development/Projects/Facial_Detection/Lionel_Messi_20180626.jpg"
 Image(filename=path)
 
 obj = DeepFace.analyze(
