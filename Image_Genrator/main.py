@@ -12,7 +12,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
     use_auth_token = True
 )
 
-prompt = ("A futuristic Starbucks barista,"
+prompt = ("An astronaut riding a horse on the moon"
         "full HD 4K resolution"
 )
 image = pipe(prompt,guidance_scale = 7.5)["sample"][0]
