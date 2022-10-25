@@ -13,12 +13,12 @@ pipe = StableDiffusionPipeline.from_pretrained(
     use_auth_token = True
 )
 
-prompt = ("An imaginary human whith wings"
+prompt = ("An imaginary god whith wings"
         "full HD 4K resolution"
 )
 image = pipe(prompt,guidance_scale = 7.5)["sample"][0]
 
-image.save("An imaginary human whith wings.jpg")
+image.save("An imaginary god whith wings.jpg")
 
 #plt.axis = ("off")
 #plt.imshow(image);
