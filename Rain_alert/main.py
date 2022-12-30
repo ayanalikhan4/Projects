@@ -16,3 +16,4 @@ parameters = {
 
 response = requests.get(OWM_Endpoint,params = parameters)
 response.raise_for_status()
+
