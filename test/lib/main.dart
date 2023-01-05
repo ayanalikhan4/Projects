@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("My First App",
+        title: const Text("Salah Time",
             style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
         centerTitle: true,
         backgroundColor: Colors.amber,
@@ -20,33 +20,43 @@ class Home extends StatelessWidget {
           children: <Widget>[
             Container(
               padding: const EdgeInsets.all(20.0),
-              margin: const EdgeInsets.all(15),
+              margin: const EdgeInsets.all(10.0),
               color: Colors.grey,
-              child: const Text("Fajar"),
+              child: const Text("Fajar",
+                  style:
+                      TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
             ),
             Container(
               padding: const EdgeInsets.all(20.0),
               margin: const EdgeInsets.all(10.0),
               color: Colors.grey,
-              child: const Text("Dohor"),
+              child: const Text("Dohor",
+                  style:
+                      TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
             ),
             Container(
               padding: const EdgeInsets.all(20.0),
               margin: const EdgeInsets.all(10.0),
               color: Colors.grey,
-              child: const Text("Asar"),
+              child: const Text("Asar",
+                  style:
+                      TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
             ),
             Container(
               padding: const EdgeInsets.all(20.0),
               margin: const EdgeInsets.all(10.0),
               color: Colors.grey,
-              child: const Text("Maghrib"),
+              child: const Text("Maghrib",
+                  style:
+                      TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
             ),
             Container(
               padding: const EdgeInsets.all(20.0),
               margin: const EdgeInsets.all(10.0),
               color: Colors.grey,
-              child: const Text("Isha"),
+              child: const Text("Isha",
+                  style:
+                      TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
             ),
           ]),
       floatingActionButton: const FloatingActionButton(
@@ -58,7 +68,13 @@ class Home extends StatelessWidget {
 }
 
 
-/*class MyApp extends StatelessWidget {
+/*
+
+
+
+
+
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
