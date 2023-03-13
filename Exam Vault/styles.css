@@ -1,12 +1,14 @@
 body {
-  background-color: aqua;
+  background: url("background.png") no-repeat;
+  background-size: fill ;
+  
 
 }
 
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #11c034;
+    background-color: #ddd;
   }
   
   /* Style the links inside the navigation bar */
@@ -26,22 +28,6 @@ body {
     color: black;
   }
   
-  /* Style the "active" element to highlight the current page */
-  .topnav a.active {
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  /* Style the search box inside the navigation bar */
-  .topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-  
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
@@ -56,24 +42,22 @@ body {
       border: 1px solid #ccc;
     }
   }
-  .newsearch{
-    -webkit-font-smoothing: antialiased;
-    text-size-adjust: 100%;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    position: relative;
+  .topnav button {
+    background-color: white;
+    color: black;
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin-top: 3px;
+    margin-right: 16px;
+    font-size: 17px;
     border: none;
-    width: 100%;
-    min-width: 152px;
-    font-size: inherit;
-    padding: 8px 16px 8px 48px;
-    border-radius: 4px;
-    background: rgb(255, 255, 255);
-    height: 48px;
-    z-index: 2;
-    color: rgb(23, 43, 77);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-left: 56px;
   }
+
+  .topnav button:hover {
+    cursor: pointer;
+  }
+  

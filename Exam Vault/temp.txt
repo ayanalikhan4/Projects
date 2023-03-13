@@ -1,0 +1,6 @@
+/* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #080607;
+    color: white;
+  }
+  
