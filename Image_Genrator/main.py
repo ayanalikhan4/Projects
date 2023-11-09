@@ -13,8 +13,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
     use_auth_token = True
 )
 
-prompt = ("An imaginary god whith wings"
-        "full HD 4K resolution"
+prompt = ("A dog holding a rose in his mouth and the dog has a crown on his head"
 )
 image = pipe(prompt,guidance_scale = 7.5)["sample"][0]
 
